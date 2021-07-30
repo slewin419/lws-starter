@@ -25,14 +25,12 @@ const Theme = ({ state }) => {
         <html lang="en" />
       </Head>
 
-      {/* Add some global styles for the whole site, like body or a's. 
+      {/* Add some global styles for the whole site, like body or a's.
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
       <Global styles={globalStyles} />
 
       {/* Add the header of the site. */}
-      <HeadContainer>
-        <Header />
-      </HeadContainer>
+      <Header />
 
       {/* Add the main section. It renders a different component depending
       on the type of URL we are in. */}
